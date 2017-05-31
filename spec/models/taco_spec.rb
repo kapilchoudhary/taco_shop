@@ -6,6 +6,6 @@ RSpec.describe Taco, type: :model do
   it { should validate_presence_of(:meat) }
 
   # ensure column meat is have only chicken or steak
-  it { should define_enum_for(:meat).with([:chicken, :steak]) }
+  it { should define_enum_for(:meat).with([:chicken, :steak, :other_meat]) }
 
 end

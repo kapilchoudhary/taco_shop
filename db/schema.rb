@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20170531114334) do
     t.integer "meat"
     t.boolean "rice"
     t.boolean "salsa"
+    t.boolean "other_side"
     t.string "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -52,13 +52,13 @@ RSpec.describe 'Tacos API', type: :request do
   # Test suite for POST /tacos
   describe 'POST /tacos' do
     # valid payload
-    let(:valid_attributes) { {taco: attributes_for(:taco, :chicken)} }
+    let(:valid_attributes) { {taco: attributes_for(:taco, :other_meat)} }
 
     context 'when the request is valid' do
       before { post '/tacos', params: valid_attributes }
 
       it 'creates a taco' do
-        expect(json['meat']).to eq('chicken')
+        expect(json['meat']).to eq('other_meat')
       end
 
       it 'returns status code 201' do

@@ -6,11 +6,11 @@ RSpec.describe TacosController, type: :controller do
   # Taco. As you add validations to Taco, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    { meat: "chicken" ,rice: true ,salsa: false ,notes: "Test Notes" }
+    { meat: "chicken" ,rice: true ,salsa: false , other_side: true, notes: "Test Notes" }
   }
 
   let(:invalid_attributes) {
-    { rice: true ,salsa: false ,notes: "Test Notes" }
+    { rice: true ,salsa: false,other_side: true ,notes: "Test Notes" }
   }
 
   # This should return the minimal set of values that should be in the session

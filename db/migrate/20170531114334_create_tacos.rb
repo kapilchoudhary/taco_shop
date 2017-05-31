@@ -4,6 +4,7 @@ class CreateTacos < ActiveRecord::Migration[5.1]
       t.integer :meat
       t.boolean :rice
       t.boolean :salsa
+      t.boolean :other_side
       t.string :notes
 
       t.timestamps
